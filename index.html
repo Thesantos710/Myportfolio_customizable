@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="name">My<span>Portfolio</span></a>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="menu">
+            <i class='bx bx-menu' id="icon-menu"></i>
+            <i class='bx bx-x' id="close-menu"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="https://github.com/Thesantos710" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/thesantos710"target="_blank">Linked In</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <h3>Hi, Everyone!</h3>
+            <h1>I'm <span>Víctor Santos</span></h1>
+            <h3>Frontend Developer</h3><br>
+            <p>Newbie Frontend Developerwith no experience HAHAHA.<br>
+            Practicing to create a website and imprrove my frontend skills.</p>
+        </div>
+        <div class="image-container">
+            <img src="resources/img/IMG-20210619-WA0092.jpg" alt="Thesantos"
+        </div>
+    </section>
+
+    <div id="Contact">
+        <h2>Contact</h2>
+        <form action="enviar.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
